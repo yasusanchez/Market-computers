@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    width: 100vw;
+    height: 100vh;  
+    background-color: #e5b9f8;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    position: relative;
+    background-color: #ce70ff;
+}
+
+.flex-container1, .flex-container2, .flex-container3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Asegura que el espacio se distribuya entre los elementos */
+    width: 100%;
+    gap: 10px;
+    margin: 8px auto; /* Centra el contenedor */
+}
+
+.flex-container1 > div, 
+.flex-container2 > div, 
+.flex-container3 > div {
+    flex: 1 1 calc(20% - 10px); /* Ajuste preciso para cinco elementos */
+    max-width: calc(20% - 10px);
+    background-color: #ce70ff;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.flex-container4 {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -25px; /* Ajusta el margen superior */
+  margin-left: 60px; /* Ajusta el margen izquierdo */
+}
+
+.flex-container4 > div {
+    flex: 0 0 calc(25% - 50px); /* Ancho de cada elemento, ajustable según el número de elementos por fila */
+    margin: 10px;
+    text-align: left;
+    background-color:#ce70ff;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.img-computer {
+    width: 100%;
+    height: 140px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+.img-computer1 {
+    width: 230px; /* Ajusta el ancho de la imagen al 100% */
+    height: 130px;
+
+    object-fit: cover;
+}
+
+.img-computer2 {
+    width: 230px; /* Ajusta el ancho de la imagen al 100% */
+    height: 130px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.img-computer3 {
+    width: 230px; /* Ajusta el ancho de la imagen al 100% */
+    height: 130px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.img-computer4 {
+    width: 230px; /* Ajusta el ancho de la imagen al 100% */
+    height: 130px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.img-computer5 {
+    width: 290px; /* Ajusta el ancho de la imagen al 100% */
+    height: 130px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.container-logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 20rem; 
+}
+
+.img-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px black;
+  }
+
+.nav-bar {
+    position: relative;
+    left: 35rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin-top: -35px;
+    font-weight: bold;
+}
+
+.container-btn {
+    display: flex;
+    gap: 10px;
+    order: 2;
+    margin-top: 35px;
+    position: relative;
+    right: 50rem;
+}
+
+.btn-icon {
+    padding: 10px;
+    background-color:#9c30c0;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    color: rgb(12, 12, 12);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border: 2px solid #050505;
+}
+
+.btn-icon > img{
+    width: 15px;
+    margin-right: 5px;
+}
+
+.add-to-cart {
+    padding: 2px;
+    background-color:#9c30c0;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    color: rgb(12, 12, 12);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border: 2px solid #050505
+}
