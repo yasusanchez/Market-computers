@@ -71,35 +71,30 @@ header {
 .img-computer1 {
     width: 230px; /* Ajusta el ancho de la imagen al 100% */
     height: 130px;
-
     object-fit: cover;
 }
 
 .img-computer2 {
     width: 230px; /* Ajusta el ancho de la imagen al 100% */
     height: 130px;
-    border-radius: 5px;
     object-fit: cover;
 }
 
 .img-computer3 {
     width: 230px; /* Ajusta el ancho de la imagen al 100% */
     height: 130px;
-    border-radius: 5px;
     object-fit: cover;
 }
 
 .img-computer4 {
     width: 230px; /* Ajusta el ancho de la imagen al 100% */
     height: 130px;
-    border-radius: 5px;
     object-fit: cover;
 }
 
 .img-computer5 {
     width: 290px; /* Ajusta el ancho de la imagen al 100% */
     height: 130px;
-    border-radius: 5px;
     object-fit: cover;
 }
 .container-logo {
@@ -165,3 +160,4 @@ header {
     font-weight: bold;
     border: 2px solid #050505
 }
+
