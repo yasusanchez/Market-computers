@@ -1,154 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Styles/index.css">
-  <title>Market Computers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Market Computers</title>
 </head>
 <body>
-    
     <header>
-    
         <div class="nav-bar">
-          <h1>Market</h1>
+            <h1>Market</h1>
         </div>
-        
         <div class="container-btn">
-            <button class="btn-icon" id="cart-button"><img src="assets/carrito-de-compras.png"></button>
+            <button class="btn-icon" id="cart-button"><img src="assets/carrito-de-compras.png" alt="Carrito de Compras"></button>
         </div>
-
         <div class="container-logo">
-          <img class="img-logo" src="assets/logotipo.png" alt="logotipo">
+            <img class="img-logo" src="assets/logotipo.png" alt="Logotipo">
         </div>
     </header>
 
     <hr>
 
     <div class="flex-container1">
-        <div><img class="img-computer1" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 1</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
+        <div data-id="20" data-name="Kyrie 1" data-price="260000">
+            <img class="img-computer1" src="assets/HP 15.webp" alt="Producto 1">
+            <h4>Kyrie 1</h4>
+            <p>Precio: $260,000</p>
+            <button class="add-to-cart">Agregar al carrito</button>
         </div>
-
-        <div><img class="img-computer1" src="assets/HP 15.webp" alt="photo">
+        <div data-id="21" data-name="Producto 2" data-price="300000">
+            <img class="img-computer1" src="assets/HP 15.webp" alt="Producto 2">
             <h4>Producto 2</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
+            <p>Precio: $300,000</p>
+            <button class="add-to-cart">Agregar al carrito</button>
         </div>
-
-        <div><img class="img-computer1" src="assets/HP 15.webp" alt="photo">
+        <div data-id="22" data-name="Producto 3" data-price="400000">
+            <img class="img-computer1" src="assets/HP 15.webp" alt="Producto 3">
             <h4>Producto 3</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
+            <p>Precio: $400,000</p>
+            <button class="add-to-cart">Agregar al carrito</button>
         </div>
-
-        <div><img class="img-computer1" src="assets/HP 15.webp" alt="photo">
+        <div data-id="23" data-name="Producto 4" data-price="150000">
+            <img class="img-computer1" src="assets/HP 15.webp" alt="Producto 4">
             <h4>Producto 4</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
+            <p>Precio: $150,000</p>
+            <button class="add-to-cart">Agregar al carrito</button>
         </div>
-
-        <div><img class="img-computer1" src="assets/HP 15.webp" alt="photo">
+        <div data-id="24" data-name="Producto 5" data-price="280000">
+            <img class="img-computer1" src="assets/HP 15.webp" alt="Producto 5">
             <h4>Producto 5</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
+            <p>Precio: $280,000</p>
+            <button class="add-to-cart">Agregar al carrito</button>
         </div>
     </div>
 
     <div class="flex-container2">
-        <div><img class="img-computer2" src="assets/HP 15.webp" alt="photo">
+        <div data-id="25" data-name="Producto 6" data-price="350000">
+            <img class="img-computer2" src="assets/HP 15.webp" alt="Producto 6">
             <h4>Producto 6</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
+            <p>Precio: $350,000</p>
+            <button class="add-to-cart">Agregar al carrito</button>
         </div>
-
-        <div><img class="img-computer2" src="assets/HP 15.webp" alt="photo">
-                <h4>Producto 7</h4>
-                <p>Precio</p>
-                <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer2" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 8</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer2" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 9</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer2" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 10</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
+        <!-- Repite el patrón para otros productos -->
     </div>
 
-    <div class="flex-container3">
-        <div><img class="img-computer3" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 11</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
+    <table id="cart-items">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body"></tbody> <!-- Este es el cuerpo donde se agregan los productos -->
+    </table>
+    <h3 id="total">Total: $0</h3>
+    
 
-        <div><img class="img-computer3" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 12</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer3" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 13</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer3" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 14</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer3" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 15</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer3" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 16</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer3" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 17</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer4" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 18</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer4" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 19</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-
-        <div><img class="img-computer4" src="assets/HP 15.webp" alt="photo">
-            <h4>Producto 20</h4>
-            <p>Precio</p>
-            <button class="add-to-cart">Add to cart</button>
-        </div>
-    </div>    
-    <script src="script.js"></script>
+    <button id="continue-shopping">Continuar Comprando</button>
+    <button id="checkout-button">Proceder al Pago</button>
+    
+    <script src="cart.js"></script>
 </body>
+</html>
